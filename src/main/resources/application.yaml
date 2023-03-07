@@ -9,11 +9,12 @@ logging:
 
 spring:
   datasource:
-    url: jbcd:mysql://localhost3306/board
+    url: jdbc:mysql://localhost:3306/board
     username: yong
     password: Rhlanf1357!@#$
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
+    database: mysql
     defer-datasource-initialization: true
     hibernate.ddl-auto: create
     open-in-view: false
